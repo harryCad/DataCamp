@@ -59,3 +59,81 @@ print('is_punct:', [token.is_punct for token in doc])
 print('like_num:', [token.like_num for token in doc])
 ```
 Lexical attributes refer to their entry in the vocabulary and don't depend on the token's context.
+
+## Exercises
+### Getting Started
+```python
+# Import the English language class
+from spacy.lang.en import English
+
+# Create the nlp object
+nlp = English()
+
+# Prcoess a text
+doc = nlp("This is a sentence.")
+
+# Print the document text
+print(doc.text)
+```
+
+```python
+# Import the German language class
+from spacy.lang.de import German
+
+# Create the nlp object
+nlp = German()
+
+# Prcoess a text (this is German for: "Kind regards!")
+doc = nlp("Liebe GrüBe!")
+
+# Print the document text
+print(doc.text)
+```
+
+```python
+# Import the Spanish language class
+from spacy.lang.es import Spanish
+
+# Create the nlp object
+nlp = Spanish()
+
+# Process a text (this is Spanish for: "How are you?")
+doc = nlp("?Cómo estás?")
+
+# Print the document text
+print(doc.text)
+```
+
+### Documents, spans and tokens
+```python
+# Import the English language class and create the nlp object
+from spacy.lang.en import English
+nlp = English()
+
+# Process the text
+doc = nlp("I like tree kangaroos and narwhals.")
+
+# Select the first token
+first_token = doc[0]
+
+# Print the first token's text
+print(first_token.text)
+```
+
+```python
+# Import the English language class and create the nlp object
+from spacy.lang.en import English
+nlp = English()
+
+# Process the text
+doc = nlp("I like tree kangaroos and narwhals.")
+
+# A slice of the Doc for "tree kangaroos"
+tree_kangaroos = doc[2:4]
+print(tree_kangaroos.text)
+
+# A slice of the Doc for "tree kangaroos and narwhals" (whtout the ".")
+tree_kangaroos_and_narwhals = doc[2:6]
+print(tree_kangaroos_and_narwhals.text)
+```
+### Lexical attributes
