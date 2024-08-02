@@ -55,7 +55,7 @@ spaCy usses a standardized label scheme to describe syntactic dependencies.
 - Noun "pizza" is a direct object attached to the verb "ate".
 - It is eated by the subject, "she".
 - The determiner "the", the article, is attached to the noun "pizza".
-![statistical-models_dependency-label-scheme](../images/statistical-models_dependency-label-scheme.png)
+![statistical-models_dependency-label-scheme](images/statistical-models_dependency-label-scheme.png)
 
 ## Predicting Named Entities
 Named entities are "real world objects" that are assigned a name (i.e. a person, organization or a country).
