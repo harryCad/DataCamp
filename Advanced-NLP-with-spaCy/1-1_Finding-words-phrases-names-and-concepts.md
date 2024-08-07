@@ -62,6 +62,7 @@ Lexical attributes refer to their entry in the vocabulary and don't depend on th
 
 ## Exercises
 ### Getting Started
+1.
 ```python
 # Import the English language class
 from spacy.lang.en import English
@@ -75,7 +76,7 @@ doc = nlp("This is a sentence.")
 # Print the document text
 print(doc.text)
 ```
-
+2.
 ```python
 # Import the German language class
 from spacy.lang.de import German
@@ -89,7 +90,7 @@ doc = nlp("Liebe GrüBe!")
 # Print the document text
 print(doc.text)
 ```
-
+3.
 ```python
 # Import the Spanish language class
 from spacy.lang.es import Spanish
@@ -105,6 +106,7 @@ print(doc.text)
 ```
 
 ### Documents, spans and tokens
+1.
 ```python
 # Import the English language class and create the nlp object
 from spacy.lang.en import English
@@ -119,7 +121,7 @@ first_token = doc[0]
 # Print the first token's text
 print(first_token.text)
 ```
-
+2.
 ```python
 # Import the English language class and create the nlp object
 from spacy.lang.en import English
@@ -136,6 +138,7 @@ print(tree_kangaroos.text)
 tree_kangaroos_and_narwhals = doc[2:6]
 print(tree_kangaroos_and_narwhals.text)
 ```
+
 ### Lexical attributes
 ```python
 # Process the text

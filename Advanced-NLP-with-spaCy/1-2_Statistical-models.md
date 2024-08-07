@@ -1,4 +1,4 @@
-#Statistical models
+# Statistical models
 
 ## What are statistical models?
 Some of the most interesting things you can analyze are context specific.
@@ -83,6 +83,7 @@ spacy.explain('dobj')
 ## Exercises
 
 ### Loading models
+1.
 ```python
 # Load the 'en_core-web_sm' model - spaCy is already imported
 nlp = spacy.load('en_core_web_sm')
@@ -95,7 +96,7 @@ doc = nlp(text)
 # Print the document text
 print(doc.text)
 ```
-
+2.
 ```python
 # Load the 'de_core_news_sm' model – spaCy is already imported
 nlp = spacy.load('de_core_news_sm')
@@ -110,6 +111,7 @@ print(doc.text)
 ```
 
 ### Predicting linguistic annotations
+1.
 ```python
 text = "It's official: Apple is the first U.S. public company to reach a $1 trillion market value"
 
@@ -124,7 +126,7 @@ for token in doc:
     # This is for formatting only
     print('{:<12}{:<10}{:<10}'.format(token_text, token_pos, token_dep))
 ```
-
+2.
 ```python
 text = "It's offical: Apple is the first U.S. public company to reach a $1 trillion market value"
 
